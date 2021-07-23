@@ -41,7 +41,8 @@ while ($row = $result-> fetch(PDO::FETCH_ASSOC)) {
     echo "<td>" . $row['firstname'] . "</td>";
     echo "<td>" . $row['lastname'] . "</td>";
     echo "<td>" . $row['class'] . "</td>";
-    echo "<td><a href=\" edit.php?id=$row[id]\">Edit</a></td>";
+    echo "<td>  <a href=\" edit.php?id=$row[id]\">Edit</a> | 
+                <a href=\" delete.php?id=$row[id]\">delete</a></td>";
     echo "</tr>";
 }
 

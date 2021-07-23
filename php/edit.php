@@ -43,7 +43,7 @@ else {
                             ':lastname' => $lastname,
                             ':class' => $class));
 
-header("Location:index.php");
+header("Location: index.php");
 
 
 }
