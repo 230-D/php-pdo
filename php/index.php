@@ -21,21 +21,27 @@ $result = $db->query("SELECT * from schueler order by id desc");
     
 </head>
 <body>
-    
+
+<a href="create.html"></a>
+
+
 <table>
     <tr>
         <td>Firstname</td>
         <td>Lastname</td>
         <td>Class</td>
+        <td>Actions</td>
     </tr>
 
 <?php
 
+// While -Loop, festch als assoziatives Array
 while ($row = $result-> fetch(PDO::FETCH_ASSOC)) {
     echo "<tr>";
     echo "<td>" . $row['firstname'] . "</td>";
     echo "<td>" . $row['lastname'] . "</td>";
     echo "<td>" . $row['class'] . "</td>";
+    echo "<td><a href=\" edit.php?id=$row[id]\">Edit</a></td>";
     echo "</tr>";
 }
 
