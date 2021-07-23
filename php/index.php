@@ -5,8 +5,8 @@ include_once("config.php");
 $result = $db->query("SELECT * from schueler order by id desc");
 
 
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,12 @@ $result = $db->query("SELECT * from schueler order by id desc");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- Hier normalize css einfügen-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="css/style.css">
     
     <title>Document</title>
@@ -22,6 +27,9 @@ $result = $db->query("SELECT * from schueler order by id desc");
 </head>
 <body>
 
+
+<div class="outer-container">
+    <div class="inner-container">
 <a href="create.html"></a>
 
 
@@ -50,8 +58,8 @@ while ($row = $result-> fetch(PDO::FETCH_ASSOC)) {
 ?>
 
 </table>
-
-
+    </div>
+</div>
 
 </body>
 </html>

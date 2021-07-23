@@ -10,10 +10,12 @@ $dbPasswd = '';
 
 
 try {
-    new PDO("mysql:host={$dbHost}; dbName={$dbName}", $dbUser, $dbPasswd);
+    new PDO("mysql:host={$dbHost}; dbname={$dbName}", $dbUser, $dbPasswd);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Wenn nicht möglich
-} catch (PDOException $error) {
+} 
+catch (PDOException $error) 
+{
     echo $error-> getMessage();
 }

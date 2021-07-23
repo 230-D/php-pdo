@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+a {
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: lightgreen;
+    text-decoration: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    }
+
+a:hover {
+        color: orange;
+    }
+
+.inner-container{
+            margin: auto;
+            background-color: teal;
+            box-shadow: 0 3px 10px  rgb(0 0 0 / 0.2);
+            }
+
+.outer-container{
+                display: flex;
+               
+                }
+
+body{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    background-color: tomato;
+}
+
+
